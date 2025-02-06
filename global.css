@@ -1,0 +1,21 @@
+* {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: #f4f4f4;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+ul li::marker {
+  color: #6366f1;
+}
+
+body {
+  background-color: #18181b;
+  color: #f4f4f4;
+}
