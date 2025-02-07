@@ -76,6 +76,13 @@ a:hover {
 
 @media screen and (max-width: 1070px) {
   #cards-container {
+    padding-left: 20px;
+    padding-rigth: 20px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  #cards-container {
     display: flex;
     flex-direction: column;
     padding: 2px;
