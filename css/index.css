@@ -44,7 +44,6 @@ h2 {
   height: 500px;
   padding: 20px;
   border: solid 2px rgba(255, 255, 255, 0.1);
-  overflow: hidden;
 }
 
 img {
@@ -83,7 +82,7 @@ a:hover {
   }
 
   img {
-    height: 200px;
-    width: 400px;
+    height: 100px;
+    width: 300px;
   }
 }
