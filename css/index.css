@@ -18,9 +18,9 @@ body {
 #cards-container {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  margin-top: 50px;
-  gap: 30px;
-  padding: 20px;
+  justify-content: center;
+  place-items: center;
+  padding: 10px;
 }
 
 h2 {
@@ -28,6 +28,7 @@ h2 {
 }
 
 .card {
+  margin-top: 50px;
   display: flex;
   flex-direction: column;
   gap: 1px;
@@ -35,10 +36,13 @@ h2 {
   align-items: center;
   box-shadow: 3px 6px 10px rgba(0, 0, 0, 0.1);
   border-radius: 8px;
-  background-color: white;
+  background-color: #202022;
   cursor: pointer;
   transition: all 0.3s ease;
   overflow: hidden;
+  width: 500px;
+  height: 500px;
+  padding: 20px;
 }
 
 .card img {
@@ -53,12 +57,10 @@ a {
   text-decoration: none;
   color: white;
   background-color: #6366f1;
-  width: 100%;
   text-align: center;
-  border-bottom-right-radius: 8px;
-  border-bottom-left-radius: 8px;
   padding: 10px 0;
-  z-index: 1;
+  width: 100%;
+  border-radius: 8px;
 }
 
 a:hover {
@@ -68,5 +70,11 @@ a:hover {
 @media screen and (max-width: 600px) {
   #cards-container {
     grid-template-columns: 1fr;
+    padding: 2px;
+  }
+
+  .card {
+    width: 300px;
+    height: 300px;
   }
 }
