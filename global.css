@@ -2,34 +2,65 @@
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
+body {
+  background: #18181b;
+  color: white;
+}
+
 #header {
   display: flex;
   flex-direction: column;
   gap: 1px;
-
   justify-content: center;
   align-items: center;
+}
+
+#cards-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin-top: 50px;
+  gap: 30px;
+  padding: 20px;
+}
+
+h2 {
+  text-align: center;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  gap: 1px;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 3px 6px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  background-color: white;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  overflow: hidden;
+}
+
+.card img {
+  height: 300px;
+}
+
+.card:hover {
+  transform: translateY(-10px);
 }
 
 a {
   text-decoration: none;
-  color: #f4f4f4;
+  color: white;
   background-color: #6366f1;
-  border-radius: 8px;
-  padding: 20px;
-  width: 80%;
+  width: 100%;
+  text-align: center;
+  border-bottom-right-radius: 8px;
+  border-bottom-left-radius: 8px;
+  padding: 10px 0;
+  z-index: 1;
 }
 
 a:hover {
-  background-color: #4d4fbf;
-}
-
-body {
-  background-color: #18181b;
-  color: #f4f4f4;
-  display: flex;
-  flex-direction: column;
-  gap: 5px;
-  justify-content: center;
-  align-items: center;
+  background-color: #4f46e5;
 }
