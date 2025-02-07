@@ -64,3 +64,9 @@ a {
 a:hover {
   background-color: #4f46e5;
 }
+
+@media screen and (max-width: 600px) {
+  #cards-container {
+    grid-template-columns: 1fr;
+  }
+}
