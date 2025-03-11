@@ -1,32 +1,33 @@
-    * {
-      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-    }
+* {
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      }
 
-    :root {
-      --accent-color: #c1121f;
-    }
+      html,
+      body {
+        height: 100%;
+        background: linear-gradient(135deg, #000000 0%, #130f40 100%);
+        background-size: cover;
+        background-repeat: no-repeat;
+        color: #fff;
+        text-align: center;
+      }
 
-    body {
-      background: #18181b;
-      color: #fff;
-      text-align: center;
-    }
+      .card {
+        background: rgba(255, 255, 255, 0.1);
+        border-radius: 1rem;
+        margin: 1rem;
+        padding: 1rem;
+        width: 300px;
+        display: inline-block;
+      }
 
-    a {
-      background-color: var(--accent-color);
-      color: #fff;
-      text-decoration: none;
-      padding-top: 4px;
-      padding-bottom: 4px;
-      padding-left: 8px;
-      padding-right: 8px;
-      border-radius: 8px;
-    }
+      .card a {
+        color: var(--accent-color);
+        font-weight: bold;
+        text-decoration: none;
+        transition: all 0.3s ease;
+      }
 
-    a:hover {
-      background-color: #780000;
-    }
-
-    .card {
-      margin-bottom: 50px;
-    }
+      .card a:hover {
+        text-decoration: underline;
+      }
