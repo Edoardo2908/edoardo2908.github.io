@@ -1,12 +1,32 @@
-* {
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-}
+    * {
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    }
 
-body {
-  background: #18181b;
-  color: white;
-}
+    :root {
+      --accent-color: #c1121f;
+    }
 
-#header {
-  text-aling: center;
-}
+    body {
+      background: #18181b;
+      color: #fff;
+      text-align: center;
+    }
+
+    a {
+      background-color: var(--accent-color);
+      color: #fff;
+      text-decoration: none;
+      padding-top: 4px;
+      padding-bottom: 4px;
+      padding-left: 8px;
+      padding-right: 8px;
+      border-radius: 8px;
+    }
+
+    a:hover {
+      background-color: #780000;
+    }
+
+    .card {
+      margin-bottom: 50px;
+    }
