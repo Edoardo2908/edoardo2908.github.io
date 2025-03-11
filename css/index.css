@@ -5,6 +5,8 @@
       body {
         background: linear-gradient(135deg, #000000 0%, #130f40 100%);
         color: #fff;
+        background-size: cover;
+        background-repeat: no-repeat;
         text-align: center;
       }
 
