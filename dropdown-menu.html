@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    * {
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    nav {
+      position: fixed;
+      width: 100%;
+      top: 0;
+      left: 0;
+      right: 0;
+      padding: 12px;
+      background-color: rgb(102, 0, 255);
+    }
+
+    button {
+      padding: 12px;
+      border-radius: 12px;
+      border: none;
+      cursor: pointer;
+      background-color: #fff;
+      color: #000;
+    }
+
+    button:hover {
+      background-color: #e8e8e8;
+    }
+
+    #dropdown {
+      position: absolute;
+      display: none;
+      top: 100%;
+      left: 0;
+      right: 0;
+      background-color: rgb(102, 0, 255);
+      padding: 12px;
+    }
+
+    a {
+      color: white;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    #dropdown-content {
+      display: flex;
+      flex-direction: column;
+      padding: 3px;
+      gap: 5px;
+    }
+  </style>
+
+  <body>
+    <nav>
+      <button>Toggle dropdown</button>
+      <div id="dropdown">
+        <div id="dropdown-content">
+          <a href="#">link 1</a>
+          <a href="#">link 2</a>
+          <a href="#">link 3</a>
+        </div>
+      </div>
+    </nav>
+  </body>
+
+  <script>
+    const button = document.querySelector("button");
+    const dropdown = document.querySelector("div");
+    let isVisible = false;
+    button.addEventListener("click", () => {
+      dropdown.style.display = isVisible ? "none" : "block";
+      isVisible = !isVisible;
+    });
+
+    document.addEventListener("click", (e) => {
+      if (!dropdown.contains(e.target) && !e.target.matches("button")) {
+        dropdown.style.display = "none";
+        isVisible = false;
+      }
+    });
+  </script>
+</html>
