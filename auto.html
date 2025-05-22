@@ -1,105 +1,140 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" type="image/x-icon" href="./img/home.png" />
+    <title>Esercizio automobile</title>
+    <style>
+      @import url("./css/torna-indietro-btn.css");
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="icon" type="image/x-icon" href="./img/home.png">
-  <title>Esercizio automobile</title>
-</head>
+      body {
+        background-color: #121212;
+        color: #fff;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 30px;
+      }
 
-<body>
-  <a href="./">Torna alla home</a>
-  <h1>Jeep Renegade</h1>
-  <img src="./img/jeep.jpg" width="500">
-  <table border="1">
-    <tr>
-      <th>Modello</th>
-      <th>Prezzo</th>
-      <th>Alimentazione</th>
-    </tr>
-    <tr>
-      <td>Jeep Renegade Sport</td>
-      <td>33450</td>
-      <td>benzina</td>
-    </tr>
-    <tr>
-      <td>Jeep Renegade Longitude</td>
-      <td>33500</td>
-      <td>benzina / diesel</td>
-    </tr>
-    <tr>
-      <td>Jeep Renegade Limited</td>
-      <td>39000</td>
-      <td>benzina / diesel</td>
-    </tr>
-    <tr>
-      <td>Jeep Renegade Trailhawk</td>
-      <td>47000</td>
-      <td>diesel</td>
-    </tr>
-    <tr>
-      <td>Jeep Renegade S</td>
-      <td>48000</td>
-      <td>benzina</td>
-    </tr>
-    <tr>
-      <td>Jeep Renegade 4xe (ibrida plug-in)</td>
-      <td>52450</td>
-      <td>benzina e motore elettrico</td>
-    </tr>
-  </table>
-  <hr>
-  <h2>Optional (possono variare in base al modello scelto)</h2>
-  <ul>
-    <li>Telecamera anteriore</li>
-    <li>Telecamera posteriore</li>
-    <li>Tetto panoramico</li>
-    <li>Climatizzatore automatico</li>
-    <li>Sistema di frenata automatica d'emergenza</li>
-    <li>Apple CarPlay e Android Auto</li>
-    <li>Cerchi in lega da 19 pollici</li>
-  </ul>
-  <hr>
-  <h2>Punti di forza</h2>
-  <p>
-    Questa fantastica auto offre un'ottima esperienza alla guida e raggiunge velocità elevate. Maggiori informazioni su
-    questa vettura e sul modello più adatto alle tue esigente le puoi trovare sul sito del concessionario: <a href="https://www.fassina.it/">
-      clicca qui!</a>
-  </p>
-  <hr>
-  <h2>Modulo da compilare</h2>
-  <form>
-    <label for="nome-concessionario">Nome concessionario visitato</label>
-    <input type="text" id="nome-concessionario">
-    <br><br>
-    <input type="checkbox" id="termini">
-    <label for="termini">Acconsento il trattamento dei miei dati personali</label>
-    <br><br>
-    <p>Modello:</p>
-    <input type="radio" id="modello-1" name="modello">
-    <label for="modello-1">Jeep Renegade Sport</label>
-    <br>
-    <input type="radio" id="modello-2" name="modello">
-    <label for="modello-2">Jeep Renegade Longitude</label>
-    <br>
-    <input type="radio" id="modello-3" name="modello">
-    <label for="modello-3">Jeep Renegade Limited</label>
-    <br>
-    <input type="radio" id="modello-4" name="modello">
-    <label for="modello-4">Jeep Renegade Trailhawk</label>
-    <br>
-    <input type="radio" id="modello-5" name="modello">
-    <label for="modello-5">Jeep Renegade S</label>
-    <br>
-    <input type="radio" id="modello-6" name="modello">
-    <label for="modello-5">Modello 6</label>
-    <br>
-    <input type="radio" id="modello-7" name="modello">
-    <label for="modello-7">Jeep Renegade 4xe (ibrida plug-in)</label>
-    <br><br>
-    <input type="submit" value="Invia">
-  </form>
-</body>
+      hr {
+        width: 80%;
+      }
 
+      h1 {
+        margin-top: 100px;
+      }
+
+      input[type="submit"] {
+        background-color: #fff;
+        color: #121212;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+
+      input[type="submit"]:hover {
+        background-color: #e8e8e8;
+      }
+    </style>
+  </head>
+  <body>
+    <a class="torna-indietro-btn" href="./index.html">Torna alla home</a>
+    <h1>Jeep Renegade</h1>
+    <img src="./img/jeep.jpg" width="500" />
+    <table border="1">
+      <tr>
+        <th>Modello</th>
+        <th>Prezzo</th>
+        <th>Alimentazione</th>
+      </tr>
+      <tr>
+        <td>Jeep Renegade Sport</td>
+        <td>33450</td>
+        <td>benzina</td>
+      </tr>
+      <tr>
+        <td>Jeep Renegade Longitude</td>
+        <td>33500</td>
+        <td>benzina / diesel</td>
+      </tr>
+      <tr>
+        <td>Jeep Renegade Limited</td>
+        <td>39000</td>
+        <td>benzina / diesel</td>
+      </tr>
+      <tr>
+        <td>Jeep Renegade Trailhawk</td>
+        <td>47000</td>
+        <td>diesel</td>
+      </tr>
+      <tr>
+        <td>Jeep Renegade S</td>
+        <td>48000</td>
+        <td>benzina</td>
+      </tr>
+      <tr>
+        <td>Jeep Renegade 4xe (ibrida plug-in)</td>
+        <td>52450</td>
+        <td>benzina e motore elettrico</td>
+      </tr>
+    </table>
+    <hr />
+    <h2>Optional (possono variare in base al modello scelto)</h2>
+    <ul>
+      <li>Telecamera anteriore</li>
+      <li>Telecamera posteriore</li>
+      <li>Tetto panoramico</li>
+      <li>Climatizzatore automatico</li>
+      <li>Sistema di frenata automatica d'emergenza</li>
+      <li>Apple CarPlay e Android Auto</li>
+      <li>Cerchi in lega da 19 pollici</li>
+    </ul>
+    <hr />
+    <h2>Punti di forza</h2>
+    <p>
+      Questa fantastica auto offre un'ottima esperienza alla guida e raggiunge
+      velocità elevate. Maggiori informazioni su questa vettura e sul modello
+      più adatto alle tue esigente le puoi trovare sul sito del concessionario:
+      <a href="https://www.fassina.it/"> clicca qui!</a>
+    </p>
+    <hr />
+    <h2>Modulo da compilare</h2>
+    <form>
+      <label for="nome-concessionario">Nome concessionario visitato</label>
+      <input type="text" id="nome-concessionario" />
+      <br /><br />
+      <input type="checkbox" id="termini" />
+      <label for="termini"
+        >Acconsento il trattamento dei miei dati personali</label
+      >
+      <br /><br />
+      <p>Modello:</p>
+      <input type="radio" id="modello-1" name="modello" />
+      <label for="modello-1">Jeep Renegade Sport</label>
+      <br />
+      <input type="radio" id="modello-2" name="modello" />
+      <label for="modello-2">Jeep Renegade Longitude</label>
+      <br />
+      <input type="radio" id="modello-3" name="modello" />
+      <label for="modello-3">Jeep Renegade Limited</label>
+      <br />
+      <input type="radio" id="modello-4" name="modello" />
+      <label for="modello-4">Jeep Renegade Trailhawk</label>
+      <br />
+      <input type="radio" id="modello-5" name="modello" />
+      <label for="modello-5">Jeep Renegade S</label>
+      <br />
+      <input type="radio" id="modello-6" name="modello" />
+      <label for="modello-5">Modello 6</label>
+      <br />
+      <input type="radio" id="modello-7" name="modello" />
+      <label for="modello-7">Jeep Renegade 4xe (ibrida plug-in)</label>
+      <br /><br />
+      <input type="submit" value="Invia" />
+    </form>
+  </body>
 </html>
