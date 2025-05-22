@@ -1,0 +1,17 @@
+.torna-indietro-btn {
+  margin-top: 10px;
+  margin-left: 10px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding: 10px 20px;
+  background-color: #7a00e6;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 8px;
+  transition: background-color 0.3s ease;
+}
+
+.torna-indietro-btn:hover {
+  background-color: #6c00e0;
+}
