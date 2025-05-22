@@ -1,104 +1,136 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/x-icon" href="./img/home.png">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/x-icon" href="./img/home.png" />
     <title>Home</title>
-</head>
-<body>
-    <a href="./">Torna alla home</a>
-    <!-- nome, cognome, data di nascita, email, password, regione, sesso, acconsento, note, invia foto, submit  -->
+    <style>
+      @import url("./css/torna-indietro-btn.css");
+
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        height: 100vh;
+        background-color: #121212;
+        color: #fff;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      }
+
+      input[type="submit"] {
+        background-color: #fff;
+        color: #121212;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+
+      input[type="submit"]:hover {
+        background-color: #e8e8e8;
+      }
+    </style>
+  </head>
+  <body>
+    <a class="torna-indietro-btn" href="./">Torna alla home</a>
     <form>
-        <label for="nome">Nome</label>
-        <input type="text" id="nome">
+      <label for="nome">Nome</label>
+      <input type="text" id="nome" />
 
-        <br>
-        <br>
+      <br />
+      <br />
 
-        <label for="cognome">Cognome</label>
-        <input type="text" id="cognome">
+      <label for="cognome">Cognome</label>
+      <input type="text" id="cognome" />
 
-        <br>
-        <br>
+      <br />
+      <br />
 
-        <label for="data-di-nascita">Data</label>
-        <input type="date" id="data-di-nascita">
+      <label for="data-di-nascita">Data</label>
+      <input type="date" id="data-di-nascita" />
 
-        <br>
-        <br>
+      <br />
+      <br />
 
-        <label for="email">Email</label>
-        <input type="email" for="email">
+      <label for="regioni">Seleziona regione</label>
+      <select name="regioni" id="regioni">
+        <option value="piemonte">Piemonte</option>
+        <option value="valle-aosta">Valle d'Aosta</option>
+        <option value="lombardia">Lombardia</option>
+        <option value="trentino-alto-adige">Trentino Alto-Adige</option>
+        <option value="veneto">Veneto</option>
+        <option value="friuli-venezia-giulia">Friuli-Venezia Giulia</option>
+        <option value="liguria">Liguria</option>
+        <option value="emilia-romagna">Emilia-Romagna</option>
+        <option value="toscana">Toscana</option>
+        <option value="umbria">Umbria</option>
+        <option value="marche">Marche</option>
+        <option value="lazio">Lazio</option>
+        <option value="abruzzo">Abruzzo</option>
+        <option value="molise">Molise</option>
+        <option value="campania">Campania</option>
+        <option value="puglia">Puglia</option>
+        <option value="basilicata">Basilicata</option>
+        <option value="calabria">Calabria</option>
+        <option value="sicilia">Sicilia</option>
+        <option value="sardegna">Sardegna</option>
+      </select>
 
-        <br>
-        <br>
-        
-        <label for="password">Password</label>
-        <input type="password" name="password">
+      <br />
+      <br />
+      <hr />
+      <p>Sesso:</p>
+      <input type="radio" id="maschio" name="sesso" />
+      <label for="maschio">Maschio</label>
+      <br />
+      <input type="radio" id="femmina" name="sesso" />
+      <label for="femmina">Femmina</label>
 
-        <br>
-        <br>
+      <br />
+      <br />
+      <hr />
+      <br />
 
-        <label for="regioni">Seleziona regione</label>
-        <select name="regioni" id="regioni">
-            <option value="piemonte">Piemonte</option>    
-            <option value="valle-aosta">Valle d'Aosta</option>    
-            <option value="lombardia">Lombardia</option>
-            <option value="trentino-alto-adige">Trentino Alto-Adige</option>
-            <option value="veneto">Veneto</option>
-            <option value="friuli-venezia-giulia">Friuli-Venezia Giulia</option>
-            <option value="liguria">Liguria</option>
-            <option value="emilia-romagna">Emilia-Romagna</option>
-            <option value="toscana">Toscana</option>
-            <option value="umbria">Umbria</option>
-            <option value="marche">Marche</option>
-            <option value="lazio">Lazio</option>
-            <option value="abruzzo">Abruzzo</option>
-            <option value="molise">Molise</option>
-            <option value="campania">Campania</option>
-            <option value="puglia">Puglia</option>
-            <option value="basilicata">Basilicata</option>
-            <option value="calabria">Calabria</option>
-            <option value="sicilia">Sicilia</option>
-            <option value="sardegna">Sardegna</option>
-        </select>
+      <label for="nota">Aggiungi nota (opzionale)</label>
+      <br />
+      <textarea id="nota"></textarea>
 
-        <br>
-        <br>
+      <br />
+      <br />
 
-        <p>Sesso:</p>
-        <input type="radio" id="maschio" name="sesso">
-        <label for="maschio">Maschio</label>
-        <br>
-        <input type="radio" id="femmina" name="sesso">
-        <label for="femmina">Femmina</label>
+      <label for="foto">Invia foto</label>
+      <br />
+      <input type="file" id="foto" />
 
-        <br>
-        <br>
+      <br />
+      <br />
+      <hr />
+      <br />
 
-        <label for="nota">Aggiungi nota (opzionale)</label>
-        <br>
-        <textarea id="nota"></textarea>
+      <label for="email">Email</label>
+      <input type="email" for="email" />
 
-        <br>
-        <br>
+      <br />
+      <br />
 
-        <label for="foto">Invia foto</label>
-        <br>
-        <input type="file" id="foto">
+      <label for="password">Password</label>
+      <input type="password" name="password" />
 
-        <br>
-        <br>
+      <br />
+      <br />
 
-        <input type="checkbox" id="termini">
-        <label for="termini">Accetto i termini di servizio</label>
+      <hr />
+      <br />
 
-        <br>
-        <br>
+      <input type="checkbox" id="termini" />
+      <label for="termini">Accetto i termini di servizio</label>
 
-        <input type="submit" value="Registrati">
+      <br />
+      <br />
 
+      <input type="submit" value="Registrati" />
     </form>
-</body>
+  </body>
 </html>
