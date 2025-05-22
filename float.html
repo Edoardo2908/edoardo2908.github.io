@@ -1,65 +1,82 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/x-icon" href="./img/home.png">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/x-icon" href="./img/home.png" />
     <title>Portale</title>
     <style>
-        body {
-            padding: 100px;
-        }
+      @import url("./css/torna-indietro-btn.css");
 
-        #header {
-            background-color: orange;
-            height: 100px;
-        }
-        
-        #footer {
-            height: 100px;
-            background-color: yellow;
-            clear: both;
-        }
+      body {
+        background-color: #121212;
+        color: #fff;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      }
 
-        #left {
-            float: left;
-            height: 400px;
-            background-color: red;
-            width: 15%;
-        }
+      body {
+        padding: 100px;
+      }
 
-        #center {
-            background-color: purple;
-            height: 400px;
-            width: 62%;
-            float: left;
-        }
+      #header {
+        background-color: orange;
+        height: 100px;
+      }
 
-        #right {
-            float: right;
-            height: 400px;
-            background-color: green;
-            width: 15%;
-        }
+      #footer {
+        height: 100px;
+        background-color: yellow;
+        clear: both;
+      }
 
-        div {
-            border: solid 2px black;
-            margin: 20px;
-        }
+      #left {
+        float: left;
+        height: 400px;
+        background-color: red;
+        width: 15%;
+      }
 
-        iframe {
-            width: 100%;
-        }
+      #center {
+        background-color: purple;
+        height: 400px;
+        width: 62%;
+        float: left;
+      }
+
+      #right {
+        float: right;
+        height: 400px;
+        background-color: green;
+        width: 15%;
+      }
+
+      div {
+        border: solid 2px black;
+        margin: 20px;
+      }
+
+      iframe {
+        width: 100%;
+      }
     </style>
-</head>
-<body>
-    <a href="./index.html">Torna alla home</a>
+  </head>
+  <body>
+    <a class="torna-indietro-btn" href="./index.html">Torna alla home</a>
     <div id="header"></div>
     <div id="left"></div>
     <div id="center">
-        <iframe width="700" height="400" src="https://www.youtube.com/embed/HwkD5lRe0jw?list=PLP5MAKLy8lP-a0MG-MFHKCISmj2Wg4vT6" title="CSS3 Tutorial Italiano 01 - Introduzione approfondita a CSS" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      <iframe
+        width="700"
+        height="400"
+        src="https://www.youtube.com/embed/HwkD5lRe0jw?list=PLP5MAKLy8lP-a0MG-MFHKCISmj2Wg4vT6"
+        title="CSS3 Tutorial Italiano 01 - Introduzione approfondita a CSS"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        referrerpolicy="strict-origin-when-cross-origin"
+        allowfullscreen
+      ></iframe>
     </div>
     <div id="right"></div>
     <div id="footer"></div>
-</body>
+  </body>
 </html>
