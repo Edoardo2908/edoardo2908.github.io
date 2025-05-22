@@ -5,69 +5,69 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
   </head>
-  <style>
-    * {
-      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-    }
+      <style>
+      @import url("./css/torna-indietro-btn.css");
 
-    nav {
-      position: fixed;
-      width: 100%;
-      top: 0;
-      left: 0;
-      right: 0;
-      padding: 12px;
-      background-color: rgb(102, 0, 255);
-    }
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        height: 100vh;
+        background-color: #121212;
+        color: #fff;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      }
 
-    button {
-      padding: 12px;
-      border-radius: 12px;
-      border: none;
-      cursor: pointer;
-      background-color: #fff;
-      color: #000;
-    }
+      nav {
+        position: relative;
+      }
 
-    button:hover {
-      background-color: #e8e8e8;
-    }
+      #dropdown {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        display: none;
+      }
 
-    #dropdown {
-      position: absolute;
-      display: none;
-      top: 100%;
-      left: 0;
-      right: 0;
-      background-color: rgb(102, 0, 255);
-      padding: 12px;
-    }
+      #dropdown-content {
+        background-color: #333;
+        padding: 10px;
+      }
 
-    a {
-      color: white;
-      text-decoration: none;
-    }
+      #dropdown-content a {
+        display: block;
+        margin-bottom: 5px;
+        color: #fff;
+        text-decoration: none;
+      }
 
-    a:hover {
-      text-decoration: underline;
-    }
+      #dropdown-content a:hover {
+        text-decoration: underline;
+      }
 
-    #dropdown-content {
-      display: flex;
-      flex-direction: column;
-      padding: 3px;
-      gap: 5px;
-    }
-  </style>
+      button {
+        background-color: #333;
+        color: #fff;
+        padding: 10px 20px;
+        border: none;
+        cursor: pointer;
+      }
 
+      button:hover {
+        background-color: #555;
+      }
+    </style>
+  </head>
   <body>
+    <a class="torna-indietro-btn" href="./index.html">Torna alla home</a>
     <nav>
-      <button>Toggle dropdown</button>
+      <button>Apri dropdown</button>
       <div id="dropdown">
         <div id="dropdown-content">
-          <a href="#">link 1</a>
-          <a href="#">link 2</a>
-          <a href="#">link 3</a>
+          <a href="#">Prova 1</a>
+          <a href="#">Prova 2</a>
+          <a href="#">Prova 3</a>
         </div>
       </div>
     </nav>
