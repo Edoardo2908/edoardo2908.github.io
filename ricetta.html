@@ -3,11 +3,30 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" type="image/x-icon" href="./img/home.png">
+    <link rel="icon" type="image/x-icon" href="./img/home.png" />
     <title>Ricetta</title>
+    <style>
+      @import url("./css/torna-indietro-btn.css");
+
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 20px;
+        background-color: #121212;
+        color: #fff;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        padding: 50px;
+      }
+
+      hr {
+        width: 80%;
+      }
+    </style>
   </head>
   <body>
-    <a href="./">Torna alla home</a>
+    <a class="torna-indietro-btn" href="./index.html">Torna alla home</a>
     <h1>Lenticchie e salsiccia</h1>
     <img width="400" src="./img/lenticchie.avif" alt="lenticchie-e-salsiccia" />
     <table border="1">
