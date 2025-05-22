@@ -1,27 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel="icon" type="image/x-icon" href="./img/home.png">
-        <title>Tag formattazione</title>
-    </head>
-    <body>
-        <a href="./index.html">Torna alla home</a>
-        <h2>Bold (grassetto)</h2>
-        <b>Grassetto con tag b</b>
-        <br />
-        <strong>Grassetto con tag strong</strong>
-        <br />
-        <h2>Italic (corsivo)</h2>
-        <i>Corsivo con tag i</i>
-        <br />
-        <em>Emphasized (corsivo) con tag em</em>
-        <br />
-        <h2>Underline (sottolineato)</h2>
-        <u>Sottolineato con tag u</u>
-        <br />
-        <h2>Barrato</h2>
-        <s>Barrato con tag s</s>
-    </body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/x-icon" href="./img/home.png" />
+    <title>Tag formattazione</title>
+    <style>
+      @import url("./css/torna-indietro-btn.css");
+
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        height: 100vh;
+        background-color: #121212;
+        color: #fff;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      }
+    </style>
+  </head>
+  <body>
+    <a class="torna-indietro-btn" href="./index.html">Torna alla home</a>
+    <h2>Bold (grassetto)</h2>
+    <b>Grassetto con tag b</b>
+    <br />
+    <strong>Grassetto con tag strong</strong>
+    <br />
+    <h2>Italic (corsivo)</h2>
+    <i>Corsivo con tag i</i>
+    <br />
+    <em>Emphasized (corsivo) con tag em</em>
+    <br />
+    <h2>Underline (sottolineato)</h2>
+    <u>Sottolineato con tag u</u>
+    <br />
+    <h2>Barrato</h2>
+    <s>Barrato con tag s</s>
+  </body>
 </html>
