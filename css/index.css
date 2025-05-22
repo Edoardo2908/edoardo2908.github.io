@@ -1,32 +1,56 @@
 * {
-        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
- 
+
 body {
-        background-color: #121212;
-        color: #fff;
-        text-align: center;
+  background-color: #121212;
+  color: #fff;
+  text-align: center;
+}
+
+h2 {
+  margin-top: 50px;
 }
 
 .card {
-        background: rgba(255, 255, 255, 0.1);
-        border-radius: 1rem;
-        margin: 1rem;
-        padding: 1rem;
-        width: 300px;
-        display: inline-block;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 1rem;
+  margin: 1rem;
+  padding: 1rem;
+  width: 300px;
+  display: inline-block;
+  color: #fff;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  text-align: center;
+  height: 50px;
+  text-decoration: none;
 }
 
-.card a {
-        color: #fff;
-        font-weight: bold;
-        text-decoration: none;
-}
-
-.card a:hover {
-        text-decoration: underline;
+.card:hover {
+  background: rgba(255, 255, 255, 0.2);
 }
 
 #link-altervista {
-        color: #4e2a84;
+  color: #7a00e6;
+  text-decoration: none;
+}
+
+#link-altervista:hover {
+  text-decoration: underline;
+}
+
+#cards-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 100px;
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: black;
 }
