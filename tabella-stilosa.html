@@ -1,156 +1,166 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/x-icon" href="./img/home.png">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/x-icon" href="./img/home.png" />
     <title>Tabella stilosa</title>
     <style>
-        * {
-            font-size: 25px;
-        }
+      @import url("./css/torna-indietro-btn.css");
 
-        table {
-            margin-top: 50px;
-        }
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        height: 100vh;
+        background-color: #121212;
+        color: #fff;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      }
 
-        td {
-            border: 1px solid black;
-            padding: 10px;
-        }
+      table {
+        margin-top: 50px;
+        cursor: pointer;
+      }
 
-        td:hover {
-            background-color: red;
-        }
+      td {
+        border: 1px solid black;
+        padding: 10px;
+      }
 
-        .riga-dispari {
-            background-color: grey;
-        }
+      td:hover {
+        background-color: #7a00e6;
+      }
+
+      .riga-dispari {
+        background-color: grey;
+      }
     </style>
-</head>
-<body>
-    <a href="./">Torna alla home</a>
+  </head>
+  <body>
+    <a class="torna-indietro-btn" href="./index.html">Torna alla home</a>
     <table>
-        <tr class="riga-dispari">
-            <td>prova</td>
-            <td>prova</td>
-            <td>prova</td>
-            <td>prova</td>
-            <td>prova</td>
-            <td>prova</td>
-            <td>prova</td>
-            <td>prova</td>
-            <td>prova</td>
-            <td>prova</td>
-        </tr>
-        <tr>
-            <td>prova</td>
-            <td>prova</td>
-            <td>prova</td>
-            <td>prova</td>
-            <td>prova</td>
-            <td>prova</td>
-            <td>prova</td>
-            <td>prova</td>
-            <td>prova</td>
-            <td>prova</td>
-        </tr>
-        <tr class="riga-dispari">
-            <td>prova</td>
-            <td>prova</td>
-            <td>prova</td>
-            <td>prova</td>
-            <td>prova</td>
-            <td>prova</td>
-            <td>prova</td>
-            <td>prova</td>
-            <td>prova</td>
-            <td>prova</td>
-        </tr>
-        <tr>
-            <td>prova</td>
-            <td>prova</td>
-            <td>prova</td>
-            <td>prova</td>
-            <td>prova</td>
-            <td>prova</td>
-            <td>prova</td>
-            <td>prova</td>
-            <td>prova</td>
-            <td>prova</td>
-        </tr>
-        <tr class="riga-dispari">
-            <td>prova</td>
-            <td>prova</td>
-            <td>prova</td>
-            <td>prova</td>
-            <td>prova</td>
-            <td>prova</td>
-            <td>prova</td>
-            <td>prova</td>
-            <td>prova</td>
-            <td>prova</td>
-        </tr>
-        <tr>
-            <td>prova</td>
-            <td>prova</td>
-            <td>prova</td>
-            <td>prova</td>
-            <td>prova</td>
-            <td>prova</td>
-            <td>prova</td>
-            <td>prova</td>
-            <td>prova</td>
-            <td>prova</td>
-        </tr>
-        <tr class="riga-dispari">
-            <td>prova</td>
-            <td>prova</td>
-            <td>prova</td>
-            <td>prova</td>
-            <td>prova</td>
-            <td>prova</td>
-            <td>prova</td>
-            <td>prova</td>
-            <td>prova</td>
-            <td>prova</td>
-        </tr>
-        <tr>
-            <td>prova</td>
-            <td>prova</td>
-            <td>prova</td>
-            <td>prova</td>
-            <td>prova</td>
-            <td>prova</td>
-            <td>prova</td>
-            <td>prova</td>
-            <td>prova</td>
-            <td>prova</td>
-        </tr>
-        <tr class="riga-dispari">
-            <td>prova</td>
-            <td>prova</td>
-            <td>prova</td>
-            <td>prova</td>
-            <td>prova</td>
-            <td>prova</td>
-            <td>prova</td>
-            <td>prova</td>
-            <td>prova</td>
-            <td>prova</td>
-        </tr>
-        <tr>
-            <td>prova</td>
-            <td>prova</td>
-            <td>prova</td>
-            <td>prova</td>
-            <td>prova</td>
-            <td>prova</td>
-            <td>prova</td>
-            <td>prova</td>
-            <td>prova</td>
-            <td>prova</td>
-        </tr>
+      <tr class="riga-dispari">
+        <td>prova</td>
+        <td>prova</td>
+        <td>prova</td>
+        <td>prova</td>
+        <td>prova</td>
+        <td>prova</td>
+        <td>prova</td>
+        <td>prova</td>
+        <td>prova</td>
+        <td>prova</td>
+      </tr>
+      <tr>
+        <td>prova</td>
+        <td>prova</td>
+        <td>prova</td>
+        <td>prova</td>
+        <td>prova</td>
+        <td>prova</td>
+        <td>prova</td>
+        <td>prova</td>
+        <td>prova</td>
+        <td>prova</td>
+      </tr>
+      <tr class="riga-dispari">
+        <td>prova</td>
+        <td>prova</td>
+        <td>prova</td>
+        <td>prova</td>
+        <td>prova</td>
+        <td>prova</td>
+        <td>prova</td>
+        <td>prova</td>
+        <td>prova</td>
+        <td>prova</td>
+      </tr>
+      <tr>
+        <td>prova</td>
+        <td>prova</td>
+        <td>prova</td>
+        <td>prova</td>
+        <td>prova</td>
+        <td>prova</td>
+        <td>prova</td>
+        <td>prova</td>
+        <td>prova</td>
+        <td>prova</td>
+      </tr>
+      <tr class="riga-dispari">
+        <td>prova</td>
+        <td>prova</td>
+        <td>prova</td>
+        <td>prova</td>
+        <td>prova</td>
+        <td>prova</td>
+        <td>prova</td>
+        <td>prova</td>
+        <td>prova</td>
+        <td>prova</td>
+      </tr>
+      <tr>
+        <td>prova</td>
+        <td>prova</td>
+        <td>prova</td>
+        <td>prova</td>
+        <td>prova</td>
+        <td>prova</td>
+        <td>prova</td>
+        <td>prova</td>
+        <td>prova</td>
+        <td>prova</td>
+      </tr>
+      <tr class="riga-dispari">
+        <td>prova</td>
+        <td>prova</td>
+        <td>prova</td>
+        <td>prova</td>
+        <td>prova</td>
+        <td>prova</td>
+        <td>prova</td>
+        <td>prova</td>
+        <td>prova</td>
+        <td>prova</td>
+      </tr>
+      <tr>
+        <td>prova</td>
+        <td>prova</td>
+        <td>prova</td>
+        <td>prova</td>
+        <td>prova</td>
+        <td>prova</td>
+        <td>prova</td>
+        <td>prova</td>
+        <td>prova</td>
+        <td>prova</td>
+      </tr>
+      <tr class="riga-dispari">
+        <td>prova</td>
+        <td>prova</td>
+        <td>prova</td>
+        <td>prova</td>
+        <td>prova</td>
+        <td>prova</td>
+        <td>prova</td>
+        <td>prova</td>
+        <td>prova</td>
+        <td>prova</td>
+      </tr>
+      <tr>
+        <td>prova</td>
+        <td>prova</td>
+        <td>prova</td>
+        <td>prova</td>
+        <td>prova</td>
+        <td>prova</td>
+        <td>prova</td>
+        <td>prova</td>
+        <td>prova</td>
+        <td>prova</td>
+      </tr>
     </table>
-</body>
+  </body>
 </html>
