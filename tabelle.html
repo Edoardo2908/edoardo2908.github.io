@@ -18,17 +18,51 @@
         color: #fff;
         font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
       }
+
+      table {
+        table-layout: fixed;
+        height: 40%;
+        width: 60%;
+    border: none;
+      }
+
+      td, th {
+        border: none;
+        padding: 10px;
+        text-align: center;
+              border: solid 2px rgba(255, 255, 255, 0.2);
+        border-radius: 8px;
+      }
+
+      .sufficiente {
+        background-color: rgb(44, 180, 44);
+      }
+
+      .insufficiente {
+        background-color: rgb(199, 45, 45);
+      }
+
+      caption {
+        font-size: 30px;
+        font-weight: bold;
+        border: none;
+      }
+
+      #hidden {
+        border: none;
+        background-color: #121212;
+      }
     </style>
   </head>
 
   <body>
     <a class="torna-indietro-btn" href="./">Torna alla home</a>
-    <table border="1">
+    <table>
       <caption>
         Classe 3Cinf
       </caption>
       <tr>
-        <th bgcolor="yellow"></th>
+        <th id="hidden"></th>
         <th>ITA</th>
         <th>Storia</th>
         <th>INF</th>
@@ -40,68 +74,84 @@
         <th>Inglese</th>
         <th>Ed. civica</th>
       </tr>
-      <td>Isidoro Matteo</td>
-      <td bgcolor="green">8</td>
-      <td bgcolor="green">7</td>
-      <td bgcolor="green">7</td>
-      <td bgcolor="green">7</td>
-      <td bgcolor="green">10</td>
-      <td bgcolor="green">7</td>
-      <td bgcolor="green">8</td>
-      <td bgcolor="red">4</td>
-      <td bgcolor="green">8</td>
-      <td bgcolor="red">4</td>
+      <tr>
+
+          <td>Isidoro Matteo</td>
+          <td class="sufficiente">8</td>
+          <td class="sufficiente">7</td>
+          <td class="sufficiente">7</td>
+          <td class="sufficiente">7</td>
+          <td class="sufficiente">10</td>
+          <td class="sufficiente">7</td>
+          <td class="sufficiente">8</td>
+          <td class="insufficiente">4</td>
+          <td class="sufficiente">8</td>
+          <td class="insufficiente">4</td>
+        </tr>
       <tr>
         <td>Rosa Christian</td>
-        <td bgcolor="red">5</td>
-        <td bgcolor="green">6</td>
-        <td bgcolor="red">5</td>
-        <td bgcolor="green">7</td>
-        <td bgcolor="red">5</td>
-        <td bgcolor="green">7</td>
-        <td bgcolor="green">10</td>
-        <td bgcolor="green">6.5</td>
-        <td bgcolor="green">7</td>
-        <td bgcolor="green">7</td>
+        <td class="insufficiente">5</td>
+        <td class="sufficiente">6</td>
+        <td class="insufficiente">5</td>
+        <td class="sufficiente">7</td>
+        <td class="insufficiente">5</td>
+        <td class="sufficiente">7</td>
+        <td class="sufficiente">10</td>
+        <td class="sufficiente">6.5</td>
+        <td class="sufficiente">7</td>
+        <td class="sufficiente">7</td>
       </tr>
       <tr>
         <td>Pacchioni Matteo</td>
-        <td bgcolor="green">8</td>
-        <td bgcolor="green">7</td>
-        <td bgcolor="red">4</td>
-        <td bgcolor="green">6</td>
-        <td bgcolor="green">7</td>
-        <td bgcolor="red">2</td>
-        <td bgcolor="red">1</td>
-        <td bgcolor="green">6</td>
-        <td bgcolor="red">2.5</td>
-        <td bgcolor="green">7</td>
+        <td class="sufficiente">8</td>
+        <td class="sufficiente">7</td>
+        <td class="insufficiente">4</td>
+        <td class="sufficiente">6</td>
+        <td class="sufficiente">7</td>
+        <td class="insufficiente">2</td>
+        <td class="insufficiente">1</td>
+        <td class="sufficiente">6</td>
+        <td class="insufficiente">2.5</td>
+        <td class="sufficiente">7</td>
       </tr>
       <tr>
         <td>Scimonelli Michele</td>
-        <td bgcolor="green">7</td>
-        <td bgcolor="green">8</td>
-        <td bgcolor="green">9</td>
-        <td bgcolor="red">3</td>
-        <td bgcolor="green">6</td>
-        <td bgcolor="red">3</td>
-        <td bgcolor="green">8</td>
-        <td bgcolor="red">1</td>
-        <td bgcolor="red">5.5</td>
-        <td bgcolor="green">7</td>
+        <td class="sufficiente">7</td>
+        <td class="sufficiente">8</td>
+        <td class="sufficiente">9</td>
+        <td class="insufficiente">3</td>
+        <td class="sufficiente">6</td>
+        <td class="insufficiente">3</td>
+        <td class="sufficiente">8</td>
+        <td class="insufficiente">1</td>
+        <td class="insufficiente">5.5</td>
+        <td class="sufficiente">7</td>
       </tr>
       <tr>
         <td>Zaffaroni Edoardo</td>
-        <td bgcolor="green">7.5</td>
-        <td bgcolor="green">6.5</td>
-        <td bgcolor="green">10</td>
-        <td bgcolor="green">7.5</td>
-        <td bgcolor="green">9</td>
-        <td bgcolor="red">4.9</td>
-        <td bgcolor="green">9</td>
-        <td bgcolor="green">7.5</td>
-        <td bgcolor="green">9</td>
-        <td bgcolor="green">7</td>
+        <td class="sufficiente">10</td>
+        <td class="sufficiente">10</td>
+        <td class="sufficiente">10</td>
+        <td class="sufficiente">10</td>
+        <td class="sufficiente">10</td>
+        <td class="sufficiente">10</td>
+        <td class="sufficiente">10</td>
+        <td class="sufficiente">10</td>
+        <td class="sufficiente">10</td>
+        <td class="sufficiente">10</td>
+      </tr>
+      <tr>
+        <td>Santoro Federico</td>
+        <td class="insufficiente">3</td>
+        <td class="sufficiente">7.5</td>
+        <td class="sufficiente">6</td>
+        <td class="sufficiente">9</td>
+        <td class="insufficiente">0</td>
+        <td class="insufficiente">4.5</td>
+        <td class="sufficiente">7</td>
+        <td class="sufficiente">6.5</td>
+        <td class="sufficiente">8.5</td>
+        <td class="sufficiente">6.5</td>
       </tr>
     </table>
   </body>
